@@ -14,6 +14,7 @@ Url:		http://search.cpan.org/dist/%{module}/
 BuildRequires:  perl(HTML::Parser)
 BuildRequires:  perl(HTML::Tagset)
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This Perl module is used to check for HTML errors in strings or files.
