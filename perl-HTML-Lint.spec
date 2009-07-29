@@ -1,26 +1,26 @@
-%define module	HTML-Lint
-%define name	perl-%{module}
-%define version 2.06
-%define	release	%mkrel 1
+%define upstream_name	 HTML-Lint
+%define upstream_version 2.06
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:	Module to check for HTML errors
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTML/%{module}-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%{module}/
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:  perl(HTML::Parser)
 BuildRequires:  perl(HTML::Tagset)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This Perl module is used to check for HTML errors in strings or files.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -43,4 +43,3 @@ rm -rf %{buildroot}
 %{perl_vendorlib}/Test
 %{_mandir}/*/*
 %{_bindir}/*
-
