@@ -1,2 +1,4 @@
+removed_sources:
+  HTML-Lint-2.06.tar.bz2: 6b429c41b22559e557b06861c6cbbe43d94e80dd
 sources:
-  "HTML-Lint-2.06.tar.bz2": 6b429c41b22559e557b06861c6cbbe43d94e80dd
+  HTML-Lint-2.20.tar.gz: 8f36a97e573adb602b1d5c98c91b9ffbd90f7bed

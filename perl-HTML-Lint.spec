@@ -2,14 +2,14 @@
 %define upstream_version 2.06
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 2.20
+Release:	1
 
 Summary:	Module to check for HTML errors
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTML/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/HTML/HTML-Lint-2.20.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(HTML::Parser)
@@ -69,4 +69,5 @@ make test
 
 * Mon Jun 19 2006 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 2.02-1mdv2007.0
 - First Mandriva release
+
 
