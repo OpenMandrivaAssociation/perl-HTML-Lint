@@ -1,6 +1,5 @@
 %define upstream_name	 HTML-Lint
-%define upstream_version 2.06
-
+%define upstream_version 2.20
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 2.20
 Release:	1
