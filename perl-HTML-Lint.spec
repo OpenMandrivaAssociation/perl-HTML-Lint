@@ -2,7 +2,7 @@
 %define upstream_version 2.20
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 2.20
-Release:	2
+Release:	3
 
 Summary:	Module to check for HTML errors
 License:	GPL+ or Artistic
