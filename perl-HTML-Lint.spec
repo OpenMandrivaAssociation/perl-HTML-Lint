@@ -7,7 +7,7 @@ Release:	3
 Summary:	Module to check for HTML errors
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/HTML/HTML-Lint-2.20.tar.gz
 
 BuildRequires:	perl-devel
